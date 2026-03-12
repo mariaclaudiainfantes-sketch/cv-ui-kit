@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "description": "Shadow tokens for elevation",
+    "usage": "Use CSS variables or include in box-shadow"
+  },
+  "shadows": {
+    "none": {
+      "token": "--shadow-none",
+      "value": "none",
+      "description": "No shadow"
+    },
+    "sm": {
+      "token": "--shadow-sm",
+      "value": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+      "description": "Small shadow - subtle depth"
+    },
+    "md": {
+      "token": "--shadow-md",
+      "value": "0px 4px 6px rgba(0, 0, 0, 0.1)",
+      "description": "Medium shadow - standard elevation"
+    },
+    "lg": {
+      "token": "--shadow-lg",
+      "value": "0px 10px 15px rgba(0, 0, 0, 0.15)",
+      "description": "Large shadow - prominent elevation"
+    },
+    "xl": {
+      "token": "--shadow-xl",
+      "value": "0px 20px 25px rgba(0, 0, 0, 0.2)",
+      "description": "Extra large shadow - high elevation"
+    }
+  }
+}

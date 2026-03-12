@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "description": "Color tokens - semantic and system colors",
+    "cssVariable": true,
+    "usage": "Use CSS variables: var(--color-background-brand)"
+  },
+  "background": {
+    "brand": {
+      "token": "--color-background-brand",
+      "value": "#006dcc",
+      "rgb": "rgb(0, 109, 204)",
+      "description": "Primary brand background",
+      "usage": "Main CTAs, primary actions, brand backgrounds"
+    },
+    "default": {
+      "token": "--color-background-default",
+      "value": "#ffffff",
+      "rgb": "rgb(255, 255, 255)",
+      "description": "Default/primary background",
+      "usage": "Cards, containers, page background"
+    },
+    "weaker": {
+      "token": "--color-background-weaker",
+      "value": "#dee1e3",
+      "rgb": "rgb(222, 225, 227)",
+      "description": "Lighter background",
+      "usage": "Secondary backgrounds, disabled states"
+    },
+    "weakest": {
+      "token": "--color-background-weakest",
+      "value": "#f3f5f6",
+      "rgb": "rgb(243, 245, 246)",
+      "description": "Lightest background",
+      "usage": "Hover states, subtle backgrounds"
+    },
+    "strong": {
+      "token": "--color-background-strong",
+      "value": "#8a8f93",
+      "rgb": "rgb(138, 143, 147)",
+      "description": "Dark background",
+      "usage": "Dark mode, alternative backgrounds"
+    },
+    "stronger": {
+      "token": "--color-background-stronger",
+      "value": "#626666",
+      "rgb": "rgb(98, 102, 102)",
+      "description": "Darker background",
+      "usage": "Dark backgrounds, high contrast"
+    },
+    "strongest": {
+      "token": "--color-background-strongest",
+      "value": "#272a2a",
+      "rgb": "rgb(39, 42, 42)",
+      "description": "Darkest background",
+      "usage": "Dark theme backgrounds"
+    }
+  },
+  "text": {
+    "default": {
+      "token": "--color-text-default",
+      "value": "#272a2a",
+      "description": "Default text color",
+      "usage": "Body text, main content"
+    },
+    "inverted": {
+      "token": "--color-text-inverted",
+      "value": "#ffffff",
+      "description": "Text on dark backgrounds",
+      "usage": "Text over dark/brand colors"
+    },
+    "brand": {
+      "token": "--color-text-brand",
+      "value": "#006dcc",
+      "description": "Brand-colored text",
+      "usage": "Links, emphasis, brand text"
+    },
+    "secondary": {
+      "token": "--color-text-secondary",
+      "value": "#62666a",
+      "description": "Secondary text",
+      "usage": "Subtitle, metadata, helper text"
+    },
+    "disabled": {
+      "token": "--color-text-disabled",
+      "value": "#b5b5ba",
+      "description": "Disabled text",
+      "usage": "Disabled form fields, inactive buttons"
+    },
+    "system": {
+      "error": {
+        "token": "--color-text-system-error",
+        "value": "#c23200",
+        "description": "Error state text",
+        "usage": "Error messages, validation errors"
+      },
+      "success": {
+        "token": "--color-text-system-success",
+        "value": "#00693c",
+        "description": "Success state text",
+        "usage": "Success messages, completed actions"
+      },
+      "warning": {
+        "token": "--color-text-system-warning",
+        "value": "#be5200",
+        "description": "Warning state text",
+        "usage": "Warnings, cautions, alerts"
+      },
+      "info": {
+        "token": "--color-text-system-info",
+        "value": "#00417a",
+        "description": "Info state text",
+        "usage": "Information messages, tips"
+      }
+    }
+  },
+  "border": {
+    "brand": {
+      "token": "--color-border-brand",
+      "value": "#006dcc",
+      "description": "Brand border color"
+    },
+    "default": {
+      "token": "--color-border-default",
+      "value": "#272a2a",
+      "description": "Default border color"
+    },
+    "strong": {
+      "token": "--color-border-strong",
+      "value": "#767b7f",
+      "description": "Strong/dark border"
+    },
+    "weaker": {
+      "token": "--color-border-weaker",
+      "value": "#dee1e3",
+      "description": "Light/subtle border"
+    },
+    "weak": {
+      "token": "--color-border-weak",
+      "value": "#b5b5ba",
+      "description": "Very light border"
+    }
+  },
+  "icon": {
+    "brand": {
+      "token": "--color-icons-brand",
+      "value": "#006dcc",
+      "description": "Brand icon color"
+    },
+    "default": {
+      "token": "--color-icons-default",
+      "value": "#767b7f",
+      "description": "Default icon color"
+    },
+    "weak": {
+      "token": "--color-icons-weak",
+      "value": "#b5b5ba",
+      "description": "Weak/disabled icon color"
+    },
+    "inverted": {
+      "token": "--color-icons-inverted",
+      "value": "#ffffff",
+      "description": "Icon on dark backgrounds"
+    },
+    "disabled": {
+      "token": "--color-icons-disabled",
+      "value": "#c2e2ff",
+      "description": "Disabled icon color"
+    },
+    "strongest": {
+      "token": "--color-icons-strongest",
+      "value": "#272a2a",
+      "description": "Darkest icon color"
+    },
+    "system": {
+      "error": {
+        "token": "--color-icons-system-error",
+        "value": "#c23200",
+        "description": "Error icon"
+      },
+      "success": {
+        "token": "--color-icons-system-success",
+        "value": "#00b756",
+        "description": "Success icon"
+      },
+      "warning": {
+        "token": "--color-icons-system-warning",
+        "value": "#ffbf06",
+        "description": "Warning icon"
+      },
+      "info": {
+        "token": "--color-icons-system-info",
+        "value": "#006dcc",
+        "description": "Info icon"
+      }
+    }
+  },
+  "fill": {
+    "common": {
+      "default": {
+        "token": "--color-fill-common-default",
+        "value": "#ffffff",
+        "description": "Default fill"
+      },
+      "weaker": {
+        "token": "--color-fill-common-weaker",
+        "value": "#f3f5f6",
+        "description": "Light fill"
+      },
+      "weak": {
+        "token": "--color-fill-common-weak",
+        "value": "#dee1e3",
+        "description": "Lighter fill"
+      },
+      "strong": {
+        "token": "--color-fill-common-strong",
+        "value": "#626666",
+        "description": "Dark fill"
+      },
+      "stronger": {
+        "token": "--color-fill-common-stronger",
+        "value": "#8a8f93",
+        "description": "Darker fill"
+      },
+      "strongest": {
+        "token": "--color-fill-common-strongest",
+        "value": "#272a2a",
+        "description": "Darkest fill"
+      }
+    },
+    "brand": {
+      "token": "--color-fill-common-brand",
+      "value": "#006dcc",
+      "description": "Brand fill color"
+    },
+    "brand_weak": {
+      "token": "--color-fill-common-brand-weak",
+      "value": "#ebf6ff",
+      "description": "Light brand fill"
+    }
+  }
+}

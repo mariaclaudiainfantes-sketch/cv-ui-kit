@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "category": "layout",
+    "description": "Layout and structure components",
+    "totalComponents": 1
+  },
+  "ContentHeader": {
+    "name": "ContentHeader",
+    "description": "Header component for page content areas with title, subtitle, and actions",
+    "category": "layout",
+    "variants": ["default"],
+    "props": {
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "subtitle": {
+        "type": "string",
+        "description": "Optional subtitle or description"
+      },
+      "actions": {
+        "type": "ReactNode",
+        "description": "Action buttons or elements (right-aligned)"
+      },
+      "breadcrumbs": {
+        "type": "BreadcrumbItem[]",
+        "description": "Optional breadcrumb navigation"
+      }
+    },
+    "storybook": "/?path=/story/layout-contentheader--default"
+  }
+}

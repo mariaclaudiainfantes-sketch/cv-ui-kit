@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-12-03",
+    "storybook": "https://storybooks.1eres.net/cv-ui-kit-storybook/",
+    "repository": "https://github.com/tunombre/cv-ui-kit"
+  },
+  "categories": {
+    "loaders": {
+      "file": "loaders.json",
+      "count": 3,
+      "components": ["AISpinner", "CircularProgress", "LoadingSteps"]
+    },
+    "cards": {
+      "file": "cards.json",
+      "count": 8,
+      "components": [
+        "AccordionCard",
+        "Banner",
+        "Card",
+        "InfoCard",
+        "ProductCard",
+        "PriorityCard",
+        "PriorityCardList",
+        "SuggestionCard",
+        "OriginalContentCard"
+      ]
+    },
+    "components": {
+      "file": "components.json",
+      "count": 17,
+      "components": [
+        "Badge",
+        "Button",
+        "ButtonIcon",
+        "Chip",
+        "Dialog",
+        "FileUploader",
+        "Icon",
+        "LanguageSelector",
+        "Link",
+        "MenuItem",
+        "MenuItemBlock",
+        "Popover",
+        "Skeleton",
+        "Slider",
+        "Tab",
+        "Tabs",
+        "Toast",
+        "Wysiwyg"
+      ]
+    },
+    "forms": {
+      "file": "forms.json",
+      "count": 6,
+      "components": ["Checkbox", "RadioButton", "Select", "SelectMenu", "Switch", "Textfield"]
+    },
+    "layout": {
+      "file": "layout.json",
+      "count": 1,
+      "components": ["ContentHeader"]
+    },
+    "score": {
+      "file": "score.json",
+      "count": 5,
+      "components": ["ScoreCard", "ScoreDonut", "ScoreProgress", "ScoreProgressBar", "ScoreTag"]
+    }
+  },
+  "totals": {
+    "categories": 6,
+    "components": 37
+  }
+}

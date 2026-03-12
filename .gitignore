@@ -1,0 +1,46 @@
+# Node.js
+node_modules/
+
+# Yalc
+.yalc/*
+yalc.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Development dependencies
+.pnp
+.pnp.js
+
+# TypeScript build output
+dist/
+build/
+out/
+
+# Test coverage
+coverage/
+
+# OS config files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+
+# Editor backup files
+*~ 
+
+# npm or yarn config logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+*storybook.log
+
+# Storybook
+storybook-static/

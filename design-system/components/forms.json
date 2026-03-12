@@ -1,0 +1,247 @@
+{
+  "metadata": {
+    "category": "forms",
+    "description": "Form input components",
+    "totalComponents": 6
+  },
+  "Checkbox": {
+    "name": "Checkbox",
+    "description": "Checkbox input for boolean selection",
+    "category": "forms",
+    "variants": ["default", "disabled", "checked"],
+    "props": {
+      "label": {
+        "type": "string",
+        "required": true
+      },
+      "checked": {
+        "type": "boolean",
+        "default": false
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false
+      },
+      "onChange": {
+        "type": "function",
+        "signature": "(checked: boolean) => void",
+        "required": true
+      },
+      "error": {
+        "type": "boolean",
+        "default": false
+      }
+    },
+    "accessibility": ["aria-checked", "aria-label"],
+    "storybook": "/?path=/story/forms-checkbox--default"
+  },
+  "RadioButton": {
+    "name": "RadioButton",
+    "description": "Radio button for single selection from group",
+    "category": "forms",
+    "variants": ["default", "disabled", "checked"],
+    "props": {
+      "name": {
+        "type": "string",
+        "required": true,
+        "description": "Group name for radios"
+      },
+      "value": {
+        "type": "string",
+        "required": true
+      },
+      "label": {
+        "type": "string",
+        "required": true
+      },
+      "checked": {
+        "type": "boolean",
+        "default": false
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false
+      },
+      "onChange": {
+        "type": "function",
+        "signature": "(value: string) => void",
+        "required": true
+      }
+    },
+    "accessibility": ["aria-checked", "aria-label"],
+    "storybook": "/?path=/story/forms-radiobutton--default"
+  },
+  "Select": {
+    "name": "Select",
+    "description": "Standard select dropdown",
+    "category": "forms",
+    "variants": ["default", "disabled", "error"],
+    "props": {
+      "label": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string",
+        "required": true
+      },
+      "onChange": {
+        "type": "function",
+        "signature": "(value: string) => void",
+        "required": true
+      },
+      "options": {
+        "type": "SelectOption[]",
+        "required": true,
+        "description": "Array of {value, label} objects"
+      },
+      "placeholder": {
+        "type": "string"
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false
+      },
+      "multiple": {
+        "type": "boolean",
+        "default": false
+      },
+      "error": {
+        "type": "boolean",
+        "default": false
+      },
+      "errorMessage": {
+        "type": "string"
+      }
+    },
+    "accessibility": ["aria-label", "aria-describedby"],
+    "storybook": "/?path=/story/forms-select--default"
+  },
+  "SelectMenu": {
+    "name": "SelectMenu",
+    "description": "Advanced select with custom menu rendering",
+    "category": "forms",
+    "variants": ["default"],
+    "props": {
+      "value": {
+        "type": "string",
+        "required": true
+      },
+      "onChange": {
+        "type": "function",
+        "signature": "(value: string) => void",
+        "required": true
+      },
+      "items": {
+        "type": "MenuItem[]",
+        "required": true
+      },
+      "renderItem": {
+        "type": "function",
+        "description": "Custom item renderer"
+      }
+    },
+    "storybook": "/?path=/story/forms-selectmenu--default"
+  },
+  "Switch": {
+    "name": "Switch",
+    "description": "Toggle switch component",
+    "category": "forms",
+    "variants": ["default", "disabled", "checked"],
+    "props": {
+      "checked": {
+        "type": "boolean",
+        "required": true
+      },
+      "onChange": {
+        "type": "function",
+        "signature": "(checked: boolean) => void",
+        "required": true
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false
+      },
+      "label": {
+        "type": "string"
+      }
+    },
+    "accessibility": ["aria-checked", "aria-label"],
+    "storybook": "/?path=/story/forms-switch--default"
+  },
+  "Textfield": {
+    "name": "Textfield",
+    "description": "Text input with floating label, decorators, and validation states",
+    "category": "forms",
+    "variants": [
+      "Default",
+      "Disabled",
+      "Error",
+      "With Assistive Text",
+      "With Prefix",
+      "With Suffix",
+      "Multiline",
+      "With Decorator"
+    ],
+    "props": {
+      "label": {
+        "type": "string",
+        "required": true
+      },
+      "value": {
+        "type": "string",
+        "required": true
+      },
+      "onChange": {
+        "type": "function",
+        "signature": "(e: ChangeEvent<HTMLInputElement>) => void",
+        "required": true
+      },
+      "placeholder": {
+        "type": "string"
+      },
+      "type": {
+        "type": "enum",
+        "values": ["text", "email", "password", "number", "tel", "url"],
+        "default": "text"
+      },
+      "disabled": {
+        "type": "boolean",
+        "default": false
+      },
+      "error": {
+        "type": "boolean",
+        "default": false
+      },
+      "errorMessage": {
+        "type": "string",
+        "description": "Error text to display below field"
+      },
+      "assistiveText": {
+        "type": "string",
+        "description": "Helper text below the field"
+      },
+      "prefix": {
+        "type": "IconName | ReactNode",
+        "description": "Icon or element before input"
+      },
+      "suffix": {
+        "type": "IconName | ReactNode",
+        "description": "Icon or element after input"
+      },
+      "multiline": {
+        "type": "boolean",
+        "default": false
+      },
+      "rows": {
+        "type": "number",
+        "default": 4,
+        "required_if": "multiline === true"
+      },
+      "maxLength": {
+        "type": "number"
+      }
+    },
+    "accessibility": ["aria-label", "aria-describedby", "aria-invalid"],
+    "storybook": "/?path=/story/forms-textfield--default"
+  }
+}

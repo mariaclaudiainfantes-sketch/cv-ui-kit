@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "description": "Spacing tokens - base 4px system",
+    "unit": "4px",
+    "usage": "Use CSS variables: var(--spacing-md)"
+  },
+  "spacing": {
+    "xs": {
+      "token": "--spacing-xs",
+      "value": "4px",
+      "description": "Extra small spacing",
+      "usage": "Minimal gaps, icon spacing"
+    },
+    "sm": {
+      "token": "--spacing-sm",
+      "value": "8px",
+      "description": "Small spacing",
+      "usage": "Component internal spacing"
+    },
+    "md": {
+      "token": "--spacing-md",
+      "value": "16px",
+      "description": "Medium spacing",
+      "usage": "Default padding, margins between components"
+    },
+    "lg": {
+      "token": "--spacing-lg",
+      "value": "24px",
+      "description": "Large spacing",
+      "usage": "Section spacing, major gaps"
+    },
+    "xl": {
+      "token": "--spacing-xl",
+      "value": "32px",
+      "description": "Extra large spacing",
+      "usage": "Major section gaps"
+    },
+    "2xl": {
+      "token": "--spacing-2xl",
+      "value": "48px",
+      "description": "2X large spacing",
+      "usage": "Page-level spacing"
+    }
+  }
+}

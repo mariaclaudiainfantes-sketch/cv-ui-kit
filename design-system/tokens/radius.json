@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "description": "Border radius tokens - rounded corners",
+    "usage": "Use CSS variables: var(--radius-md)"
+  },
+  "radius": {
+    "none": {
+      "token": "--radius-none",
+      "value": "0px",
+      "description": "No border radius - sharp corners"
+    },
+    "sm": {
+      "token": "--radius-sm",
+      "value": "4px",
+      "description": "Small border radius - subtle rounding"
+    },
+    "md": {
+      "token": "--radius-md",
+      "value": "8px",
+      "description": "Medium border radius - standard rounding"
+    },
+    "lg": {
+      "token": "--radius-lg",
+      "value": "16px",
+      "description": "Large border radius - prominent rounding"
+    },
+    "xl": {
+      "token": "--radius-xl",
+      "value": "24px",
+      "description": "Extra large border radius - very rounded"
+    },
+    "full": {
+      "token": "--radius-full",
+      "value": "9999px",
+      "description": "Full border radius - circular/pill shapes"
+    }
+  }
+}

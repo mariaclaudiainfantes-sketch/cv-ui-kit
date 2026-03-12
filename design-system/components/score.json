@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "category": "score",
+    "description": "Score and progress display components",
+    "totalComponents": 5
+  },
+  "ScoreCard": {
+    "name": "ScoreCard",
+    "description": "Card displaying score information with visual indicator",
+    "category": "score",
+    "variants": ["default"],
+    "props": {
+      "score": {
+        "type": "number",
+        "required": true,
+        "description": "Numeric score value"
+      },
+      "maxScore": {
+        "type": "number",
+        "required": true,
+        "description": "Maximum possible score"
+      },
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string"
+      },
+      "variant": {
+        "type": "enum",
+        "values": ["default", "compact", "detailed"],
+        "default": "default"
+      }
+    },
+    "storybook": "/?path=/story/score-scorecard--default"
+  },
+  "ScoreDonut": {
+    "name": "ScoreDonut",
+    "description": "Donut/pie chart for visual score representation",
+    "category": "score",
+    "variants": ["default"],
+    "props": {
+      "score": {
+        "type": "number",
+        "required": true,
+        "min": 0,
+        "max": 100
+      },
+      "maxScore": {
+        "type": "number",
+        "required": true
+      },
+      "color": {
+        "type": "string",
+        "description": "Use token: var(--color-background-brand)"
+      },
+      "size": {
+        "type": "enum",
+        "values": ["small", "medium", "large"],
+        "default": "medium"
+      }
+    },
+    "storybook": "/?path=/story/score-scoredonut--default"
+  },
+  "ScoreProgress": {
+    "name": "ScoreProgress",
+    "description": "Progress indicator component for scores",
+    "category": "score",
+    "variants": ["linear", "circular"],
+    "props": {
+      "score": {
+        "type": "number",
+        "required": true
+      },
+      "maxScore": {
+        "type": "number",
+        "required": true
+      },
+      "variant": {
+        "type": "enum",
+        "values": ["linear", "circular"],
+        "default": "linear"
+      },
+      "label": {
+        "type": "string"
+      }
+    },
+    "storybook": "/?path=/story/score-scoreprogress--default"
+  },
+  "ScoreProgressBar": {
+    "name": "ScoreProgressBar",
+    "description": "Linear progress bar for displaying score progress",
+    "category": "score",
+    "variants": ["default"],
+    "props": {
+      "value": {
+        "type": "number",
+        "required": true,
+        "min": 0,
+        "max": 100
+      },
+      "maxValue": {
+        "type": "number",
+        "default": 100
+      },
+      "color": {
+        "type": "string",
+        "description": "Use token color"
+      },
+      "animated": {
+        "type": "boolean",
+        "default": true
+      }
+    },
+    "storybook": "/?path=/story/score-scoreprogressbar--default"
+  },
+  "ScoreTag": {
+    "name": "ScoreTag",
+    "description": "Tag component for displaying score status",
+    "category": "score",
+    "variants": ["success", "warning", "error", "default"],
+    "props": {
+      "label": {
+        "type": "string",
+        "required": true
+      },
+      "variant": {
+        "type": "enum",
+        "values": ["success", "warning", "error", "default"],
+        "default": "default"
+      },
+      "score": {
+        "type": "number",
+        "description": "Optional score value to display"
+      }
+    },
+    "storybook": "/?path=/story/score-scoretag--default"
+  }
+}

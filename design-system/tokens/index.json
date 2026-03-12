@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-12-03",
+    "description": "Design System tokens index"
+  },
+  "categories": {
+    "colors": {
+      "file": "colors.json",
+      "description": "Semantic color tokens",
+      "subcategories": [
+        "background",
+        "text",
+        "border",
+        "icon",
+        "fill"
+      ]
+    },
+    "typography": {
+      "file": "typography.json",
+      "description": "Font families, weights, and text styles",
+      "subcategories": [
+        "fontFamilies",
+        "fontWeights",
+        "styles"
+      ]
+    },
+    "spacing": {
+      "file": "spacing.json",
+      "description": "Spacing tokens (4px base)",
+      "values": ["xs", "sm", "md", "lg", "xl", "2xl"]
+    },
+    "radius": {
+      "file": "radius.json",
+      "description": "Border radius tokens",
+      "values": ["none", "sm", "md", "lg", "xl", "full"]
+    },
+    "shadows": {
+      "file": "shadows.json",
+      "description": "Shadow elevation tokens",
+      "values": ["none", "sm", "md", "lg", "xl"]
+    }
+  }
+}

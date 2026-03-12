@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "description": "Typography tokens - fonts, sizes, weights, line heights",
+    "fontFamily": "Roboto"
+  },
+  "fontFamilies": {
+    "heading": {
+      "token": "--font-family-heading",
+      "value": "Roboto",
+      "fallback": "sans-serif"
+    },
+    "body": {
+      "token": "--font-family-body",
+      "value": "Roboto",
+      "fallback": "sans-serif"
+    }
+  },
+  "fontWeights": {
+    "regular": {
+      "token": "--font-weight-regular",
+      "value": 400,
+      "description": "Regular weight for body text"
+    },
+    "medium": {
+      "token": "--font-weight-medium",
+      "value": 500,
+      "description": "Medium weight for emphasis"
+    },
+    "strong": {
+      "token": "--font-weight-strong",
+      "value": 500,
+      "description": "Strong weight (alias for medium)"
+    },
+    "bold": {
+      "token": "--font-weight-bold",
+      "value": 700,
+      "description": "Bold weight for headings"
+    }
+  },
+  "styles": {
+    "heading": {
+      "token": "--text-heading",
+      "fontFamily": "var(--font-family-heading)",
+      "fontWeight": "var(--font-weight-bold)",
+      "description": "Style for main headings"
+    },
+    "body": {
+      "token": "--text-body",
+      "fontFamily": "var(--font-family-body)",
+      "fontWeight": "var(--font-weight-regular)",
+      "description": "Style for body text"
+    },
+    "smallDetails": {
+      "token": "--text-small-details",
+      "fontFamily": "var(--font-family-body)",
+      "fontWeight": "var(--font-weight-regular)",
+      "fontSize": "12px",
+      "description": "Style for small details and captions"
+    }
+  }
+}
